@@ -1,0 +1,220 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page{
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  
+}
+.visionPage::after{
+  content: " "; 
+  position: absolute;
+  top : 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111111c5;
+  z-index: 98;
+}
+
+.visionPage{
+  background-image: url(https://www.stp-org.com/main_page/img/stp15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+ 
+  
+}
+.vision-content{
+  position: relative;
+  z-index: 999;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+}
+.titleWrapper{
+  background-color: #8a4848b4;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  border: 5px solid #ffffff;
+}
+.vision-content  h1 {
+  font-size: 120px;
+
+}
+.cards-container{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.box{
+  margin: 10px 5px;
+  min-height: 300px;
+  background-color: #ffffff3d;
+  border: 3px solid #cf3b3bba;
+  padding: 10px 5px;
+  border-radius: 5px;
+  max-width: 300px
+}
+.box h3{
+  font-size: 46px;
+}
+.box p {
+  font-size: 24px;
+}
+.mission{
+  width: 60%;
+}
+.mission p , .overview p {
+  font-size: 18px;
+}
+.icon{
+  width:60px;
+  height: 60px;
+}
+
+.backgroundColor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+#backgroundColor-input{
+  height: 45px;
+  width: 50%;
+  padding: 5px;
+  font-size: 22px;
+  margin : 0px 5px ;
+  background-color: #272727a6;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+
+}
+#backgroundColor-input::placeholder{
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.backgroundColor button, .buttonWrapper button {
+  height: 45px;
+ 
+  font-size: 22px;
+  padding: 2px 10px;
+  background-color: #3674efe8;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.backgroundColor button:hover , .buttonWrapper button:hover  {
+  background-color: #003db6e8;
+  transform: scale(1.1);
+}
+
+#backgroundColor-input:focus{
+  background-color: #212121;
+  border: 3px solid rgb(0, 251, 255);
+  outline: none;
+}
+.timeCounter{
+  background-color:#272727;
+  padding: 0;
+}
+.timeCounter .headline{
+  background-color: #111;
+  padding: 5px;
+ 
+  text-align: center;
+  font-size: 48px;
+}
+.inputContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.inputContainer h4{
+ 
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.dateWrapper{
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+input[type = "date"] , input[type = "time"] {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #151515;
+
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.buttonWrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CountDown-Container,.countdownNotworking{
+  width: 60%;
+  margin: 20px auto;
+  background-color: #74e6fdb1;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom:  10px;
+
+  
+}
+.countdownNotworking{
+  font-size: 40px;
+}
+
+
+.CountDown-Container h1{
+  background-color: #1260fcd0;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  font-size: 48px;
+  font-weight: 600;
+}
+.timeContainer{
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.time{
+  display: flex;
+  flex-direction:column ;
+  width : 200px;
+  border-radius: 5px;
+  margin: 2px 5px ;
+}
+.label{
+  
+  font-size: 34px;
+  background-color:#1260fcd0;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  padding: 5px;
+}
+.value{
+  padding: 5px;
+ 
+  font-size: 46px;
+  background-color:#74e6fdb1;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  
+}
